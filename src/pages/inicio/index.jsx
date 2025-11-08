@@ -25,7 +25,7 @@ export default function App() {
       <img className='imagemIntroducao' src="image/imagem.png"/>
       </div>
       <p className='chamado'>Violência doméstica: denunciar é o primeiro passo para <br /> interromper esse ciclo.</p>
-          <button className="denuncia" onClick={() => navigate('/denuncia')}>Fazer denúncia</button>
+          <button className="denuncia" onClick={() => navigate('/denuncia1')}>Fazer denúncia</button>
       <p className='chamado2'>Você não está sozinha. Estamos aqui para te ouvir e proteger.</p>
 
       </div>

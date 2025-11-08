@@ -1,6 +1,9 @@
 import './index.scss';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Denuncia2() {
+    const navigate = useNavigate();
     return(
        <div className='denuncia2'> 
 
@@ -101,7 +104,7 @@ export default function Denuncia2() {
     <label>Enviar novas imagens</label>
     <div className="file-upload">📎 Enviar arquivo</div>
 
-    <button className="submit-btn">Enviar Denúncia</button>
+    <button className="submit-btn" onClick={() => navigate('/denunciaEnviada')} >Enviar Denúncia</button>
   </div>
 
 </div>
