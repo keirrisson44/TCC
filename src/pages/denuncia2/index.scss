@@ -2,7 +2,7 @@
 
   background-color: #0B3D91;
   width: 500px;
-  height: 5000px;
+  height: 2500px;
   border: 2px solid #fff;
   border-radius: 8px;
   padding: 20px;
@@ -30,6 +30,12 @@
       padding: 25px 30px;
       font-weight: bold;
       cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #b80000;
+      transform: scale(1.05);
+    }
     }
   }
 
