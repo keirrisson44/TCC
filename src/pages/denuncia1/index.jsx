@@ -1,7 +1,12 @@
 import './index.scss'
+import Rodape from '../../components/rodape';
+import { useNavigate } from 'react-router-dom';
 
 
-export default function Denuncia() {
+export default function Denuncia1() {
+
+  
+ const navigate = useNavigate();
 
     return (
         <div className='Denuncia'>
@@ -43,18 +48,25 @@ export default function Denuncia() {
         <div className='texe'>
 
             <p className='para'>Em caso de NÃO atendimento de quaisquer das orientações, sua solicitação de registro de ocorrência policial será cancelada.</p>
-            <button className='bot'>Entendi quero denunciar</button>
+            <button className='bot' onClick={() => navigate('/denuncia2')}>Entendi quero denunciar</button>
 
         </div>
 
 
       </div>
 
-      <h1 className='ww'>Registro de Violência Doméstica Contra a Mulher</h1>
+      <br /><br />
 
-      <p>A violência doméstica ocorre quando a mulher é vítima de qualquer ato ou omissão que cause morte, lesão, sofrimento físico, sexual, psicológico ou dano moral e patrimonial, dentro do lar, da família ou em relações afetivas.Exemplos incluem agressões como tapas, chutes, empurrões, perseguições e destruição de pertences.   </p>
-
-      <h3 className='we'>Dados da vítima</h3>
+   <Rodape
+     titulo1="Serviços Disponíveis"
+     linkUrl="/complementar"
+     linkUrl2="/"
+     titulo2="contato"
+     insta="luzporelas@gmail.com"
+     img1="image/likdin.png"
+     img2="image/intagram.png"
+     img3="image/facbo.png"
+/>
 
       
        

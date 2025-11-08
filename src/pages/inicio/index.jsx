@@ -1,9 +1,13 @@
-import './App.scss'
+import './index.scss'
 import Rodape from '../../components/rodape'
+import { useNavigate } from 'react-router-dom';
 
 export default function App() {
- 
+
+ const navigate = useNavigate();
+
   return (
+
     <div className='inicio'>
 
        <div className="logo">
@@ -21,7 +25,7 @@ export default function App() {
       <img className='imagemIntroducao' src="image/imagem.png"/>
       </div>
       <p className='chamado'>Violência doméstica: denunciar é o primeiro passo para <br /> interromper esse ciclo.</p>
-      <button className='denuncia'>Fazer denuncia</button>
+          <button className="denuncia" onClick={() => navigate('/denuncia')}>Fazer denúncia</button>
       <p className='chamado2'>Você não está sozinha. Estamos aqui para te ouvir e proteger.</p>
 
       </div>
